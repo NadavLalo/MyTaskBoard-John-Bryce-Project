@@ -1,0 +1,129 @@
+body {
+    background-image: URL("../images/woodboard.jpg");
+    background-repeat: repeat;
+}
+
+@font-face {
+    font-family: "costumFont";
+    src: url("../font/font.otf");
+}
+
+h1 {
+    font-family: "costumFont";
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+h1, form, input {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+#notebook {
+    background-image: URL("../images/notebook.png");
+}
+
+#taskInput, #dateInput, #timeInput {
+    background-color: transparent;
+    border: none;
+}
+#taskInput {
+    margin-top: -9px;
+    margin-bottom: -18px;
+    resize: none;
+    width: 100%;
+    max-width: 250px;
+
+}
+
+#dateInput {
+    margin-top: -9px;
+    margin-bottom: -17px;
+    width: 100%;
+    max-width: 160px;
+
+}
+
+#timeInput {
+    margin-top: -10px;
+    margin-bottom: -18px;
+    width: 100%;
+    max-width: 120px;
+}
+
+button {
+    margin-top: 1px
+}
+
+
+.note {
+    background-image: URL("../images/note.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 270px;
+    width: 100%;
+    margin: 20px;
+    margin-left: 5%;
+    
+
+}
+
+.note:not(.visible) {
+    opacity: 0;
+    transition: opacity 0s linear;
+}
+
+.note.visible {
+    opacity: 1;
+    transition: opacity 1.5s linear;
+}
+
+#noteDisplay {
+    display: flex;
+    flex-wrap: wrap; 
+
+}
+
+
+table {
+    height: 100%;
+    width: 100%
+}
+
+.taskLocation {
+    position: absolute;
+    top: 20px;
+    width: 88%;
+    height: 65%;
+    overflow: auto;
+}
+
+.dateLocation {
+    position: relative;
+    top: 82%;
+}
+
+.timeLocation {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+
+.X {
+    position: absolute;
+    right: -2px;
+    top: 2px;
+    opacity: 0;
+}
+
+
+.note:hover .X {
+    opacity: 1;
+}
+
+i {
+    float: right;
+}

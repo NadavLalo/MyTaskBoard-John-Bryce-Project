@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS + CSS -->
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles/nadav.css">
+
+    <!--Font Awsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+        
+        <title>My Task Board</title>
+</head>
+
+<body class="img-fluid" onload="getLocalStorage()">
+    <div class="container">
+        <h1>My Task Board</h1>
+        <br>
+        <div id="notebook" class="row justify-content-center border border-primary rounded">
+            <div class="col-sm-6 justify-content-center">
+                <form id="form">
+                    <label for="taskInput">Enter your task:</label>
+                    <div class="input-group input-group-sm mb-3 justify-content-center justify-content-center">
+                        <textarea id="taskInput" class="border border-primary rounded" required></textarea>
+                    </div>
+
+                    <label id="dateLabel" for="dateInput">Date:</label>
+                    <div class="input-group input-group-sm mb-3 justify-content-center">
+                        <input id="dateInput" type="date" class="form-control border border-primary rounded" required>
+                    </div>
+
+                    <label id="timeLabel" for="timeInput">Time:</label>
+                    <div class="input-group input-group-sm mb-3 justify-content-center">
+                        <input id="timeInput" type="time" class="form-control border border-primary rounded">
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-outline-primary btn-sm">Save</button>
+                    <button type="reset" class="btn btn-outline-primary btn-sm">Reset</button>
+
+                </form>
+            </div>
+        </div>
+
+        <br>
+        <div id="noteDisplay" class="justify-content-left">
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="scripts/bootstrap/bootstrap-jquery.js"></script>
+    <script src="scripts/bootstrap/popper.js"></script>
+    <script src="scripts/bootstrap/bootstrap.js"></script>
+    <script src="scripts/nadav.js"></script>
+</body>
+
+</html>
